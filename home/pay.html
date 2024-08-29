@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支付</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<style>
+    body {
+        background: #F5F5F5;
+    }
+</style>
+
+<body>
+    <div class="nav-box">
+        <div class="nav">
+            <div class="nav-logo">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <div class="nav-content">
+                <ul class="a-link">
+                    <li><a href="../index.html">官网</a></li>
+                    <li><a href="index.html">商城</a></li>
+                    <li><a href="iPhone.html">手机</a></li>
+                    <li><a href="tv.html">电视</a></li>
+                    <li><a href="compute.html">笔记本</a></li>
+                    <li><a href="ipad.html">平板</a></li>
+                    <li><a href="home.html">家电</a></li>
+                </ul>
+            </div>
+            <div class="nav-search"><input type="search"><input type="button" onclick="search()" value="搜索"></div>
+            <div class="a-link"><a href="cart.html">购物车</a> | <a href="order.html">订单</a></div>
+        </div>
+    </div>
+    <div class="pay">
+        <p class="title">收获地址</p>
+        <div class="address clearfix">
+            <a class="active">
+                <div class="address-item">
+                    <div class="name">阿凡</div>
+                    <div class="call">025-84788888</div>
+                    <div class="addr">江苏南京市玄武区<br>南京德基广场南京市玄武区中山路18号</div>
+                </div>
+            </a>
+            <a>
+                <div class="address-item">
+                    <div class="name">阿凡</div>
+                    <div class="call">025-84892899</div>
+                    <div class="addr">江苏南京市秦淮区<br>南京市秦淮区御道街29号南京航空航天大学(明故宫校区)</div>
+                </div>
+            </a>
+            <a>
+                <div class="address-item">
+                    <div class="name">阿凡</div>
+                    <div class="call">025-84788888</div>
+                    <div class="addr">江苏南京市玄武区<br>南京德基广场南京市玄武区中山路18号</div>
+                </div>
+            </a>
+            <a>
+                <div class="address-item">
+                    <div class="name">阿凡</div>
+                    <div class="call">025-84892899</div>
+                    <div class="addr">江苏南京市秦淮区<br>南京市秦淮区御道街29号南京航空航天大学(明故宫校区)</div>
+                </div>
+            </a>
+        </div>
+        <p class="title">商品信息</p>
+        <div class="goods">
+            <div class="goods-item">
+                <p class="info"><span><img src="../img/phone.png" alt="">小米 14 8GB+256GB 黑色</span><span>3999元 x 1</span><span>3999元</span></p>
+                <p class="info"><span><img src="../img/tv1.png" alt="">华为智慧屏 S3 Pro 65英寸</span><span>5499元 x 1</span><span>5499元</span></p>
+                <p class="info"><span><img src="../img/compute1.png" alt="">MateBook X Pro 微绒典藏</span><span>13199元 x 1</span><span>13199元</span></p>
+                <p class="info"><span><img src="../img/ipad1.png" alt="">Galaxy Tab 12GB+256GB</span><span>11099元 x 1</span><span>11099元</span></p>
+                    <p class="info"><span><img src="../img/home1.png" alt="">华为路由 BE3 Pro 1000M</span><span>499元 x 1</span><span>499元</span></p>
+                <p class="options"><span>配送方式</span><span>包邮</span></p>
+            </div>
+        </div>
+        <div class="price">
+            <p><span>商品件数：</span><span>5件</span></p>
+            <p><span>商品总价：</span><span>34,295元</span></p>
+            <p><span>活动优惠：</span><span>-0元</span></p>
+            <p><span>优惠券抵扣：</span><span>-0元</span></p>
+            <p><span>运费：</span><span>0元</span></p>
+            <p><span>应付总额：</span><span>34,295元</span></p>
+        </div>
+        <div class="Go-pay">
+            <a class="btn" href="cart.html">返回购物车</a>
+            <form action="paysuccess.html" method="get">
+                <input class="btn" type="submit" value="去结算">
+            </form>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bottom-box">
+            <dl>
+                <dt>选购指南</dt>
+                <dd><a href="iPhone.html">手机</a></dd>
+                <dd><a href="tv.html">电视</a></dd>
+                <dd><a href="compute.html">笔记本</a></dd>
+                <dd><a href="ipad.html">平板</a></dd>
+                <dd><a href="home.html">家电</a></dd>
+            </dl>
+            <dl>
+                <dt>服务中心</dt>
+                <dd>申请售后</dd>
+                <dd>售后政策</dd>
+                <dd>维修服务价格</dd>
+                <dd>订单查询</dd>
+                <dd>以旧换新</dd>
+                <dd>保障服务</dd>
+                <dd>防伪查询</dd>
+                <dd>F码通道</dd>
+            </dl>
+            <dl>
+                <dt>关于小V</dt>
+                <dd>了解小V</dd>
+                <dd>加入小V</dd>
+                <dd>投资者关系</dd>
+                <dd>可持续发展</dd>
+                <dd>廉洁举报</dd>
+            </dl>
+            <dl>
+                <dt>关注我们</dt>
+                <dd>新浪微博</dd>
+                <dd>官方微信</dd>
+                <dd>联系我们</dd>
+                <dd>公益基金会</dd>
+            </dl>
+            <div class="call">
+                <p>400-123-5678</p>
+                <p>8:00-18:00（仅收市话费）</p>
+                <div>人工客服</div>
+            </div>
+        </div>
+        <div class="bottom-img"><img src="../img/footer.png" alt=""></div>
+    </div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/index.js"></script>
+
+</html>

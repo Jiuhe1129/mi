@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body onload="cart()">
+    <div class="nav-box">
+        <div class="nav">
+            <div class="nav-logo">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <div class="nav-content">
+                <ul class="a-link">
+                    <li><a href="../index.html">官网</a></li>
+                    <li><a href="index.html">商城</a></li>
+                    <li><a href="iPhone.html">手机</a></li>
+                    <li><a href="tv.html">电视</a></li>
+                    <li><a href="compute.html">笔记本</a></li>
+                    <li><a href="ipad.html">平板</a></li>
+                    <li><a href="home.html">家电</a></li>
+                </ul>
+            </div>
+            <div class="nav-search"><input type="search"><input type="button" onclick="search()" value="搜索"></div>
+            <div class="a-link"><a href="cart.html">购物车</a> | <a href="order.html">订单</a></div>
+        </div>
+    </div>
+    <div class="cart">
+        <table>
+            <thead>
+                <tr>
+                    <th>商品名称</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>小计</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="info"><img src="../img/xiaoV14.png" alt=""><span>小米 14 12GB+256GB 黑色</span></td>
+                    <td>3999元</td>
+                    <td>1</td>
+                    <td class="price">3999元</td>
+                    <td class="del"><button>删除</button></td>
+                </tr>
+                <tr>
+                    <td class="info"><img src="../img/tv1.png" alt=""><span>华为智慧屏 S3 Pro 65英寸</span>
+                    </td>
+                    <td>5499元</td>
+                    <td>1</td>
+                    <td class="price">5499元</td>
+                    <td class="del"><button>删除</button></td>
+                </tr>
+                <tr>
+                    <td class="info"><img src="../img/compute1.png" alt=""><span>MateBook X Pro 微绒典藏</span></td>
+                    <td>13199元</td>
+                    <td>1</td>
+                    <td class="price">13199元</td>
+                    <td class="del"><button>删除</button></td>
+                </tr>
+                <tr>
+                    <td class="info"><img src="../img/ipad1.png" alt=""><span>Galaxy Tab 12GB+256GB</span></td>
+                    <td>11099元</td>
+                    <td>1</td>
+                    <td class="price">11099元</td>
+                    <td class="del"><button>删除</button></td>
+
+                </tr>
+                <tr>
+                    <td class="info"><img src="../img/home1.png" alt=""><span>华为路由 BE3 Pro 1000M</span>
+                    </td>
+                    <td>499元</td>
+                    <td>1</td>
+                    <td class="price">499元</td>
+                    <td class="del"><button>删除</button></td>
+
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="1"><a href="index.html">继续购物</a></td>
+                    <td colspan="3">
+                        <div class="sum"></div>
+                    </td>
+                    <td class="tfoot-container">
+                        <form action="pay.html" method="get">
+                            <input type="submit" value="立即支付">
+                        </form>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="bottom">
+        <div class="bottom-box">
+            <dl>
+                <dt>选购指南</dt>
+                <dd><a href="iPhone.html">手机</a></dd>
+                <dd><a href="tv.html">电视</a></dd>
+                <dd><a href="compute.html">笔记本</a></dd>
+                <dd><a href="ipad.html">平板</a></dd>
+                <dd><a href="home.html">家电</a></dd>
+            </dl>
+            <dl>
+                <dt>服务中心</dt>
+                <dd>申请售后</dd>
+                <dd>售后政策</dd>
+                <dd>维修服务价格</dd>
+                <dd>订单查询</dd>
+                <dd>以旧换新</dd>
+                <dd>保障服务</dd>
+                <dd>防伪查询</dd>
+                <dd>F码通道</dd>
+            </dl>
+            <dl>
+                <dt>关于小V</dt>
+                <dd>了解小V</dd>
+                <dd>加入小V</dd>
+                <dd>投资者关系</dd>
+                <dd>可持续发展</dd>
+                <dd>廉洁举报</dd>
+            </dl>
+            <dl>
+                <dt>关注我们</dt>
+                <dd>新浪微博</dd>
+                <dd>官方微信</dd>
+                <dd>联系我们</dd>
+                <dd>公益基金会</dd>
+            </dl>
+            <div class="call">
+                <p>400-123-5678</p>
+                <p>8:00-18:00（仅收市话费）</p>
+                <div>人工客服</div>
+            </div>
+        </div>
+        <div class="bottom-img"><img src="../img/footer.png" alt=""></div>
+    </div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/index.js"></script>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body onload="login()">
+    <div class="login">
+        <div class="login-content">
+            <div class="login-content-item">
+                <form action="home/index.html" onsubmit="return validateForm()">
+                    <div class="login-box">
+                        <div class="title">小米登录</div>
+                        <input class="user-input" type="text" name="uid" id="uid" placeholder="请输入账号"><br>
+                        <input class="user-input" type="password" name="password" id="password" placeholder="请输入密码"><br>
+                        <div class="user-more">
+                            <div class="checkbox-box">
+                                <input class="checkbox" type="checkbox" name="" id="checkbox">
+                                <span class="checkbox-text" onclick="checkbox()">已阅读并同意账号 用户协议 和 隐私政策</span>
+                            </div>
+                        </div><br>
+                        <div class="button-box">
+                            <input class="button" type="submit" value="登录">
+                            <button class="button ml-10" type="button" onclick="signIn()">注册</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="signin-box">
+                    <div class="title">小米注册</div>
+                    <input class="user-input" type="text" name="uid" id="uid" placeholder="请输入账号"><br>
+                    <input class="user-input" type="password" name="password" id="password" placeholder="请输入密码"><br>
+                    <input class="user-input" type="password" name="confirm-password" id="confirm-password"
+                        placeholder="请输入确认密码"><br>
+                    <div class="button-box">
+                        <input class="button" type="submit" onclick="signInOK()" value="立即注册">
+                        <button class="button ml-10" type="button" onclick="signIn()">返回登录</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.cookie.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

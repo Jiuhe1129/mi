@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商城</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body onload="index()">
+    <div class="nav-box">
+        <div class="nav">
+            <div class="nav-logo">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <div class="nav-content">
+                <ul class="a-link">
+                    <li><a href="../index.html">官网</a></li>
+                    <li><a href="index.html">商城</a></li>
+                    <li><a href="iPhone.html">手机</a></li>
+                    <li><a href="tv.html">电视</a></li>
+                    <li><a href="compute.html">笔记本</a></li>
+                    <li><a href="ipad.html">平板</a></li>
+                    <li><a href="home.html">家电</a></li>
+                </ul>
+            </div>
+            <div class="nav-search"><input type="search"><input type="button" onclick="search()" value="搜索"></div>
+            <div class="a-link"><a href="cart.html">购物车</a> | <a href="order.html">订单</a></div>
+        </div>
+    </div>
+    <div class="top">
+        <div class="banner-box">
+            <ul class="banner-left a-link">
+                <li class="phone show"><a href="iPhone.html">手机</a><span class="toRight">></span>
+                </li>
+                <li class="tv show"><a href="tv.html">电视</a><span class="toRight">></span></li>
+                <li class="compute show"><a href="compute.html">笔记本</a><span class="toRight">></span></li>
+                <li class="ipad show"><a href="ipad.html">平板</a><span class="toRight">></span></li>
+                <li class="home show"><a href="home.html">家电</a><span class="toRight">></span></li>
+                <div class="phone-box min-banner">
+                    <div class="min-item">
+                        <img src="../img/phone.png" alt="">
+                        <span>小米14 Pro</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/phone(1).png" alt="">
+                        <span>Galaxy S53 Ultra</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/phone(2).png" alt="">
+                        <span>iPhone 15 Pro Max</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/phone(3).png" alt="">
+                        <span>vivo Y100i</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/phone(4).png" alt="">
+                        <span>Galaxy Z Flip5</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/phone(5).png" alt="">
+                        <span>HUAWEI Mate 60 Pro</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/phone(6).png" alt="">
+                        <span>HUAWEI P60 Art</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/phone(7).png" alt="">
+                        <span>华为畅享 60X</span>
+                    </div>
+                    <div class="min-item">
+                        <a href="iPhone.html">查看更多</a>
+                    </div>
+                </div>
+                <div class="tv-box min-banner">
+                    <div class="min-item">
+                        <img src="../img/tv1.png" alt="">
+                        <span>华为智慧屏 S3 Pro</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/tv2.png" alt="">
+                        <span>联想God 1 Pro Max</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/tv3.png" alt="">
+                        <span>TCL 电视猎手</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/tv4.png" alt="">
+                        <span>长虹 G648</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/tv5.png" alt="">
+                        <span>8848钛合金电视</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/tv6.png" alt="">
+                        <span>索尼 S502</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/tv7.png" alt="">
+                        <span>华为畅享 60X</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/tv8.png" alt="">
+                        <span>三星 R4800</span>
+                    </div>
+                    <div class="min-item">
+                        <a href="tv.html">查看更多</a>
+                    </div>
+                </div>
+                <div class="compute-box min-banner">
+                    <div class="min-item">
+                        <img src="../img/compute1.png" alt="">
+                        <span>HUAWEI MateBook X Pro 2023</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/compute2.png" alt="">
+                        <span>Redmi Book 16 2024</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/compute3.png" alt="">
+                        <span>ThinkPad X1Carbon2023</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/compute4.png" alt="">
+                        <span>ThinkBook 14+</span>
+                    </div>
+                </div>
+                <div class="ipad-box min-banner">
+                    <div class="min-item">
+                        <img src="../img/ipad1.png" alt="">
+                        <span>Galaxy Tab S9 Ultra</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/ipad2.png" alt="">
+                        <span>HUAWEI MatePad Air</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/ipad3.png" alt="">
+                        <span>iPad Pro</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/ipad4.png" alt="">
+                        <span>OPPO Pad</span>
+                    </div>
+                </div>
+                <div class="home-box min-banner">
+                    <div class="min-item">
+                        <img src="../img/home1.png" alt="">
+                        <span>华为路由 BE3 Pro</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/home2.png" alt="">
+                        <span>三系智能门锁系列</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/home3.png" alt="">
+                        <span>苹果家庭存储</span>
+                    </div>
+                    <div class="min-item">
+                        <img src="../img/home4.png" alt="">
+                        <span>米家电暖器</span>
+                    </div>
+                </div>
+            </ul>
+            <div class="banner">
+                <div class="bannerList">
+                    <img src="../img/banner2.jpg" alt="">
+                    <img src="../img/banner.jpg" alt="">
+                    <img src="../img/banner3.jpg" alt="">
+                    <img src="../img/banner4.jpg" alt="">
+                </div>
+                <div class="banner-switch">
+                    <div class="switch-top">^</div>
+                    <div class="switch-bot">^</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner-item">
+        <div class="item-box">
+            <div class="item">
+                <img src="../img/item1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="../img/item2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="../img/item3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="../img/item4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-box">
+            <div class="main-banner">
+                <img src="../img/main-banner.png" alt="">
+            </div>
+            <div class="main-item">
+                <div class="item-title">
+                    <span>手机</span><span><a href="iPhone.html">查看更多>></a></span>
+                </div>
+                <div class="mian-item-box">
+                    <img class="mian-item-box-img" src="../img/mian-item-box-img.png" alt="">
+                    <div class="item">
+
+                        <div class="items">
+                            <a href="iPhoneInfo.html">
+                                <dl>
+                                    <dt><img src="../img/phone.png" alt=""></dt>
+                                    <dd class="title">小米 14 Pro</dd>
+                                    <dd class="desc">出厂搭载小米澎湃系统不开玩笑</dd>
+                                    <dd class="price"><span>3999元</span> <del>4999元</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="iPhoneInfo.html">
+                                <dl>
+                                    <dt><img src="../img/phone(1).png" alt=""></dt>
+                                    <dd class="title">Galaxy S53 Ultra</dd>
+                                    <dd class="desc">你的下一部手机何必是小米</dd>
+                                    <dd class="price"><span>7888元</span> <del>8888元</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="iPhoneInfo.html">
+                                <dl>
+                                    <dt><img src="../img/phone(2).png" alt=""></dt>
+                                    <dd class="title">iPhone 15 Pro Max</dd>
+                                    <dd class="desc">汗流浃背了吧小老弟们</dd>
+                                    <dd class="price"><span>8888元</span> <del>9888元</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="iPhoneInfo.html">
+                                <dl>
+                                    <dt><img src="../img/phone(3).png" alt=""></dt>
+                                    <dd class="title">vivo Y100i</dd>
+                                    <dd class="desc">你的梦中情机</dd>
+                                    <dd class="price">4999起<del>5999起</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="iPhoneInfo.html">
+                                <dl>
+                                    <dt><img src="../img/phone(4).png" alt=""></dt>
+                                    <dd class="title">Galaxy Z Flip5</dd>
+                                    <dd class="desc">你的下一手机为什么不能是三星？</dd>
+                                    <dd class="price"><span>6999元</span> <del>7499元</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="iPhoneInfo.html">
+                                <dl>
+                                    <dt><img src="../img/phone(5).png" alt=""></dt>
+                                    <dd class="title">HUAWEI Mate 60 Pro</dd>
+                                    <dd class="desc">整个手机行业遥遥领先，甩苹果两条街</dd>
+                                    <dd class="price"><span>6499元</span> <del>6699元</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="iPhoneInfo.html">
+                                <dl>
+                                    <dt><img src="../img/phone(6).png" alt=""></dt>
+                                    <dd class="title">HUAWEI P60 Art</dd>
+                                    <dd class="desc">拍照远超各大友商</dd>
+                                    <dd class="price"><span>7988元</span> <del>8988元</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="iPhoneInfo.html">
+                                <dl>
+                                    <dt><img src="../img/phone(7).png" alt=""></dt>
+                                    <dd class="title">华为畅享 60X</dd>
+                                    <dd class="desc">吊打小米的性价比之王</dd>
+                                    <dd class="price"><span>1949元</span> <del>2299元</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="main-item">
+                <div class="item-title">
+                    <span>电视</span><span><a href="tv.html">查看更多>></a></span>
+                </div>
+                <div class="mian-item-box">
+                    <img class="mian-item-box-img" src="../img/tv-banner.jpg" alt="">
+                    <div class="item">
+
+                        <div class="items">
+                            <a href="tvInfo.html">
+                                <dl>
+                                    <dt><img src="../img/tv1.png" alt=""></dt>
+                                    <dd class="title">华为智慧屏 S3 Pro</dd>
+                                    <dd class="desc">4K超高清 超级投屏 | 双120Hz流畅护眼</dd>
+                                    <dd class="price">5499起<del>6999起</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="tvInfo.html">
+                                <dl>
+                                    <dt><img src="../img/tv2.png" alt=""></dt>
+                                    <dd class="title">联想God 1 Pro Max</dd>
+                                    <dd class="desc">开机速度是华为的5倍，甩他五条街</dd>
+                                    <dd class="price">5599起<del>6199起</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="tvInfo.html">
+                                <dl>
+                                    <dt><img src="../img/tv3.png" alt=""></dt>
+                                    <dd class="title">TCL 电视猎手</dd>
+                                    <dd class="desc">联想你就使劲吹吧</dd>
+                                    <dd class="price">4999起<del>5999起</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="tvInfo.html">
+                                <dl>
+                                    <dt><img src="../img/tv4.png" alt=""></dt>
+                                    <dd class="title">长虹 G648</dd>
+                                    <dd class="desc">老品牌值得信赖</dd>
+                                    <dd class="price">4999起<del>5999起</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="tvInfo.html">
+                                <dl>
+                                    <dt><img src="../img/tv5.png" alt=""></dt>
+                                    <dd class="title">8848钛合金电视</dd>
+                                    <dd class="desc">离开电视机10米自动爆炸</dd>
+                                    <dd class="price">4999起<del>5999起</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="tvInfo.html">
+                                <dl>
+                                    <dt><img src="../img/tv6.png" alt=""></dt>
+                                    <dd class="title">索尼 S502</dd>
+                                    <dd class="desc">索尼大法好</dd>
+                                    <dd class="price">4999起<del>5999起</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="tvInfo.html">
+                                <dl>
+                                    <dt><img src="../img/tv7.png" alt=""></dt>
+                                    <dd class="title">三星 R4800</dd>
+                                    <dd class="desc">屏幕质量老大哥，世界第一</dd>
+                                    <dd class="price">4999起<del>5999起</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="tvInfo.html">
+                                <dl>
+                                    <dt><img src="../img/tv8.png" alt=""></dt>
+                                    <dd class="title">小米 M119</dd>
+                                    <dd class="desc">电视机里的佼佼者</dd>
+                                    <dd class="price">4999起<del>5999起</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-item">
+                <div class="item-title">
+                    <span>笔记本</span><span><a href="compute.html">查看更多>></a></span>
+                </div>
+                <div class="mian-item-box">
+                    <img class="mian-item-box-img-min" src="../img/computer-banner.jpg" alt="">
+                    <div class="item">
+
+                        <div class="items">
+                            <a href="computeInfo.html">
+                                <dl>
+                                    <dt><img src="../img/compute1.png" alt=""></dt>
+                                    <dd class="title">HUAWEI MateBook X Pro 2023</dd>
+                                    <dd class="desc">13代酷睿i7 32GB 2TB 14.2英寸3.1K原色全面屏</dd>
+                                    <dd class="price">13199起</dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="computeInfo.html">
+                                <dl>
+                                    <dt><img src="../img/compute2.png" alt=""></dt>
+                                    <dd class="title">Redmi Book 16 2024</dd>
+                                    <dd class="desc">47W 满血性能 | 小米澎湃智联</dd>
+                                    <dd class="price">4399起<del>4699起</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="computeInfo.html">
+                                <dl>
+                                    <dt><img src="../img/compute3.png" alt=""></dt>
+                                    <dd class="title">ThinkPad X1Carbon2023</dd>
+                                    <dd class="desc">英特尔Evo平台认证酷睿i7-1360P/Windows 11 家庭中文版</dd>
+                                    <dd class="price">14484起<del>14999起</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="computeInfo.html">
+                                <dl>
+                                    <dt><img src="../img/compute4.png" alt=""></dt>
+                                    <dd class="title">ThinkBook 14+</dd>
+                                    <dd class="desc">英特尔Evo平台认证酷睿i5-13500H/Windows 11 家庭中文版</dd>
+                                    <dd class="price">6199起<del>6699起</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-item">
+                <div class="item-title">
+                    <span>平板</span><span><a href="ipad.html">查看更多>></a></span>
+                </div>
+                <div class="mian-item-box">
+                    <img class="mian-item-box-img-min" src="../img/ipad-banner.jpg" alt="">
+                    <div class="item">
+
+                        <div class="items">
+                            <a href="ipadInfo.html">
+                                <dl>
+                                    <dt><img src="../img/ipad1.png" alt=""></dt>
+                                    <dd class="title">Galaxy Tab S9 Ultra</dd>
+                                    <dd class="desc">全世界最好的屏幕我们这句话都说烂了</dd>
+                                    <dd class="price">11099起<del>12199起</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="ipadInfo.html">
+                                <dl>
+                                    <dt><img src="../img/ipad2.png" alt=""></dt>
+                                    <dd class="title">HUAWEI MatePad Air</dd>
+                                    <dd class="desc">144Hz高刷全面屏，专属PC级WPS，缤纷五色 多彩轻薄</dd>
+                                    <dd class="price">2699起</dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="ipadInfo.html">
+                                <dl>
+                                    <dt><img src="../img/ipad3.png" alt=""></dt>
+                                    <dd class="title">iPad Pro</dd>
+                                    <dd class="desc">Apple M2 芯片让各类专业工作的处理性能大幅提升</dd>
+                                    <dd class="price">6799起</dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="ipadInfo.html">
+                                <dl>
+                                    <dt><img src="../img/ipad4.png" alt=""></dt>
+                                    <dd class="title">OPPO Pad</dd>
+                                    <dd class="desc">畅快创造， 一Pad即合</dd>
+                                    <dd class="price">6199起<del>6699起</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-item">
+                <div class="item-title">
+                    <span>家电</span><span><a href="home.html">查看更多>></a></span>
+                </div>
+                <div class="mian-item-box">
+                    <img class="mian-item-box-img-min" src="../img/home-banner.jpg" alt="">
+                    <div class="item">
+
+                        <div class="items">
+                            <a href="homeInfo.html">
+                                <dl>
+                                    <dt><img src="../img/home1.png" alt=""></dt>
+                                    <dd class="title">华为路由 BE3 Pro</dd>
+                                    <dd class="desc">Wi-Fi 7 3600Mbps，双Wi-Fi连网，双倍速率，2500M疾速网口</dd>
+                                    <dd class="price">499起<del>599起</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="homeInfo.html">
+                                <dl>
+                                    <dt><img src="../img/home2.png" alt=""></dt>
+                                    <dd class="title">三系智能门锁系列</dd>
+                                    <dd class="desc">AI 3D人脸识别2.0，含NFC卡钥匙*2，金属拉丝工艺抗指纹设计</dd>
+                                    <dd class="price">2699起</dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="homeInfo.html">
+                                <dl>
+                                    <dt><img src="../img/home3.png" alt=""></dt>
+                                    <dd class="title">苹果家庭存储</dd>
+                                    <dd class="desc">手机PC扩容，内存升级，NAS存储，金融级隐私保护，图片搜索秒级呈现</dd>
+                                    <dd class="price">¥2599起<del>2999起</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="homeInfo.html">
+                                <dl>
+                                    <dt><img src="../img/home4.png" alt=""></dt>
+                                    <dd class="title">米家电暖器</dd>
+                                    <dd class="desc">2200W 强劲功率，对流速热，居浴两用</dd>
+                                    <dd class="price">279起<del>329起</del></dd>
+                                </dl>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="to-top">返回 <br> 顶部</div>
+    <div class="bottom">
+        <div class="bottom-box">
+            <dl>
+                <dt>选购指南</dt>
+                <dd><a href="iPhone.html">手机</a></dd>
+                <dd><a href="tv.html">电视</a></dd>
+                <dd><a href="compute.html">笔记本</a></dd>
+                <dd><a href="ipad.html">平板</a></dd>
+                <dd><a href="home.html">家电</a></dd>
+            </dl>
+            <dl>
+                <dt>服务中心</dt>
+                <dd>申请售后</dd>
+                <dd>售后政策</dd>
+                <dd>维修服务价格</dd>
+                <dd>订单查询</dd>
+                <dd>以旧换新</dd>
+                <dd>保障服务</dd>
+                <dd>防伪查询</dd>
+                <dd>F码通道</dd>
+            </dl>
+            <dl>
+                <dt>关于小V</dt>
+                <dd>了解小V</dd>
+                <dd>加入小V</dd>
+                <dd>投资者关系</dd>
+                <dd>可持续发展</dd>
+                <dd>廉洁举报</dd>
+            </dl>
+            <dl>
+                <dt>关注我们</dt>
+                <dd>新浪微博</dd>
+                <dd>官方微信</dd>
+                <dd>联系我们</dd>
+                <dd>公益基金会</dd>
+            </dl>
+            <div class="call">
+                <p>400-123-5678</p>
+                <p>8:00-18:00（仅收市话费）</p>
+                <div>人工客服</div>
+            </div>
+        </div>
+        <div class="bottom-img"><img src="../img/footer.png" alt=""></div>
+    </div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/index.js"></script>
+
+</html>

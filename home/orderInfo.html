@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>订单详情</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body onload="orderInfo()">
+    <div class="nav-box">
+        <div class="nav">
+            <div class="nav-logo">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <div class="nav-content">
+                <ul class="a-link">
+                    <li><a href="../index.html">官网</a></li>
+                    <li><a href="index.html">商城</a></li>
+                    <li><a href="iPhone.html">手机</a></li>
+                    <li><a href="tv.html">电视</a></li>
+                    <li><a href="compute.html">笔记本</a></li>
+                    <li><a href="ipad.html">平板</a></li>
+                    <li><a href="home.html">家电</a></li>
+                </ul>
+            </div>
+            <div class="nav-search"><input type="search"><input type="button" onclick="search()" value="搜索"></div>
+            <div class="a-link"><a href="cart.html">购物车</a> | <a href="order.html">订单</a></div>
+        </div>
+    </div>
+    <div class="orderinfo">
+        <p class="title"><span>订单详情</span>请谨防钓鱼链接或诈骗电话</p>
+        <p class="orderid">订单号：56666751100225</p>
+        <p class="state">正在出库</p>
+        <div class="schedule">
+            <div class="active active1">下单</div>
+            <div class="active active2">付款</div>
+            <div class="active active3">配货</div>
+            <div class="">出库</div>
+            <div>交易成功</div>
+        </div>
+        <div class="time">
+            <div>2020年06月01日 00:04</div>
+            <div>2020年06月01日 00:07</div>
+            <div>2020年06月01日 00:30</div>
+            <div></div>
+            <div></div>
+        </div>
+        <p class="move">物流公司： 顺丰(南京-宅急送） > &nbsp;运单号：SF1980336597522</p>
+        <p class="product"><img src="../img/xiaoV14.png" alt=""><span>小米 14 8GB+256GB 黑色</span><span>3999元 × 1</span></p>
+        <p class="product"><img src="../img/tv1.png" alt=""><span>华为智慧屏 S3 Pro 65英寸</span><span>5499元 × 1</span></p>
+        <p class="product"><img src="../img/compute1.png" alt=""><span>MateBook X Pro 微绒典藏</span><span>13199元 × 1</span></p>
+        <p class="product"><img src="../img/ipad1.png" alt=""><span>Galaxy Tab 12GB+256GB</span><span>11099元 × 1</span></p>
+        <p class="product"><img src="../img/home1.png" alt=""><span>华为路由 BE3 Pro 1000M</span><span>499元 × 1</span></p>
+        <p class="state">收货信息</p>
+        <div class="userinfo">
+            <p><span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</span><span>阿凡</span></p>
+            <p><span>联系电话：</span><span>025-84788888</span></p>
+            <p><span>收货地址：</span><span>江苏 南京市 西湖区 我不常去的麦当劳</span></p>
+        </div>
+        <div class="pay">
+            <div class="price">
+                <p><span>商品总价：</span><span>34,295元</span></p>
+                <p><span>运费：</span><span>0元</span></p>
+                <p><span>实付金额：</span><span class="sum">34,295</span><a class="yuan">元</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bottom-box">
+            <dl>
+                <dt>选购指南</dt>
+                <dd><a href="iPhone.html">手机</a></dd>
+                <dd><a href="tv.html">电视</a></dd>
+                <dd><a href="compute.html">笔记本</a></dd>
+                <dd><a href="ipad.html">平板</a></dd>
+                <dd><a href="home.html">家电</a></dd>
+            </dl>
+            <dl>
+                <dt>服务中心</dt>
+                <dd>申请售后</dd>
+                <dd>售后政策</dd>
+                <dd>维修服务价格</dd>
+                <dd>订单查询</dd>
+                <dd>以旧换新</dd>
+                <dd>保障服务</dd>
+                <dd>防伪查询</dd>
+                <dd>F码通道</dd>
+            </dl>
+            <dl>
+                <dt>关于小V</dt>
+                <dd>了解小V</dd>
+                <dd>加入小V</dd>
+                <dd>投资者关系</dd>
+                <dd>可持续发展</dd>
+                <dd>廉洁举报</dd>
+            </dl>
+            <dl>
+                <dt>关注我们</dt>
+                <dd>新浪微博</dd>
+                <dd>官方微信</dd>
+                <dd>联系我们</dd>
+                <dd>公益基金会</dd>
+            </dl>
+            <div class="call">
+                <p>400-123-5678</p>
+                <p>8:00-18:00（仅收市话费）</p>
+                <div>人工客服</div>
+            </div>
+        </div>
+        <div class="bottom-img"><img src="../img/footer.png" alt=""></div>
+    </div>
+
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/index.js"></script>
+</html>

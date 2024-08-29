@@ -1,0 +1,184 @@
+
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电视购买</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body onload="shopInfo()">
+    <div class="nav-box">
+        <div class="nav">
+            <div class="nav-logo">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <div class="nav-content">
+                <ul class="a-link">
+                    <li><a href="../index.html">官网</a></li>
+                    <li><a href="index.html">商城</a></li>
+                    <li><a href="iPhone.html">手机</a></li>
+                    <li><a href="tv.html">电视</a></li>
+                    <li><a href="compute.html">笔记本</a></li>
+                    <li><a href="ipad.html">平板</a></li>
+                    <li><a href="home.html">家电</a></li>
+                </ul>
+            </div>
+            <div class="nav-search"><input type="search"><input type="button" onclick="search()" value="搜索"></div>
+            <div class="a-link"><a href="cart.html">购物车</a> | <a href="order.html">订单</a></div>
+        </div>
+    </div>
+    <div class="shopinfo">
+        <div class="shopinfo-img">
+            <div class="img-box">
+                <img src="../img/tv1.png" alt="">
+                <img src="../img/tv1-1.png" alt="">
+                <img src="../img/tv1-2.png" alt="">
+                <img src="../img/tv1-3.png" alt="">
+            </div>
+            <div class="img-item">
+                <img class="a1" src="../img/tv1.png" alt="">
+                <img class="a2" src="../img/tv1-1.png" alt="">
+                <img class="a3" src="../img/tv1-2.png" alt="">
+                <img class="a4" src="../img/tv1-3.png" alt="">
+            </div>
+        </div>
+        <div class="shopinfo-info">
+            <p class="title">华为智慧屏 S3 Pro</p>
+            <p class="info">4K超高清 超级投屏 | 双120Hz流畅护眼</p>
+            <hr>
+            <p>选择版本</p>
+            <div class="clearfix clearfix1">
+                <a class="active">65英寸</a><a>75英寸</a><a>86英寸</a>
+            </div>
+            <p>销售类型</p>
+            <div class="clearfix clearfix2">
+                <a class="active">全款购买</a>
+            </div>
+            <div class="price-sum">
+                <p>
+                    <span>
+                        <span class="name"></span>
+                        <span class="size"></span>
+                        <span class="colour"></span>
+                    </span>
+                    <span>5499元</span>
+                </p>
+                <p class="sum">总计：5499元</p>
+            </div>
+            <form>
+                <input class="addcart" type="button" value="加入购物车"><a>喜欢</a>
+            </form>
+        </div>
+    </div>
+    <div class="comment">
+        <div class="comment-top">
+            <p>大家认为</p>
+            <div>
+                <span class="clearfix"><a>运行稳定</a></span>
+                <span class="clearfix"><a>品质一流</a></span>
+                <span class="clearfix"><a>价格实惠</a></span>
+                <span class="clearfix"><a>颜值够高</a></span>
+                <span class="clearfix"><a>系统稳定</a></span>
+            </div>
+        </div>
+        <div class="comment-box">
+            <p class="title">热门评价</p>
+            <div class="comment-item">
+                <div class="user-img">
+                    <img src="../img/login.jpg" alt="">
+                </div>
+                <div class="user-comment">
+                    <div class="user">
+                        <div>
+                            <p class="username">阿*</p>
+                            <p class="time">2023-11-29</p>
+                        </div>
+                        <div>
+                            <img src="../img/i.jpg" alt="">
+                            <span>超爱</span>
+                        </div>
+                    </div>
+                    <p class="comment-content">画质音效：图像清晰，没有拖影 鸿蒙系统：非常流畅，不卡顿 外观造型：漂亮 尺寸大小：够大，视觉效果不错 智慧功能：无开机广告，可视频聊天，支持华为智能锁画中画，整体体验很好</p>
+                    <div class="img">
+                        <img src="../img/comment-tv-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="comment-item">
+                <div class="user-img">
+                    <img src="../img/login.jpg" alt="">
+                </div>
+                <div class="user-comment">
+                    <div class="user">
+                        <div>
+                            <p class="username">阿*</p>
+                            <p class="time">2023-11-29</p>
+                        </div>
+                        <div>
+                            <img src="../img/i.jpg" alt="">
+                            <span>超爱</span>
+                        </div>
+                    </div>
+                    <p class="comment-content">华为产品质量一直杠杠滴，忠实粉丝
+                    </p>
+                    <div class="img">
+                        <img src="../img/comment-tv-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bottom-box">
+            <dl>
+                <dt>选购指南</dt>
+                <dd><a href="iPhone.html">手机</a></dd>
+                <dd><a href="tv.html">电视</a></dd>
+                <dd><a href="compute.html">笔记本</a></dd>
+                <dd><a href="ipad.html">平板</a></dd>
+                <dd><a href="home.html">家电</a></dd>
+            </dl>
+            <dl>
+                <dt>服务中心</dt>
+                <dd>申请售后</dd>
+                <dd>售后政策</dd>
+                <dd>维修服务价格</dd>
+                <dd>订单查询</dd>
+                <dd>以旧换新</dd>
+                <dd>保障服务</dd>
+                <dd>防伪查询</dd>
+                <dd>F码通道</dd>
+            </dl>
+            <dl>
+                <dt>关于小V </dt>
+                <dd>了解小V </dd>
+                <dd>加入小V </dd>
+                <dd>投资者关系</dd>
+                <dd>可持续发展</dd>
+                <dd>廉洁举报</dd>
+            </dl>
+            <dl>
+                <dt>关注我们</dt>
+                <dd>新浪微博</dd>
+                <dd>官方微信</dd>
+                <dd>联系我们</dd>
+                <dd>公益基金会</dd>
+            </dl>
+            <div class="call">
+                <p>400-123-5678</p>
+                <p>8:00-18:00（仅收市话费）</p>
+                <div>人工客服</div>
+            </div>
+        </div>
+        <div class="bottom-img"><img src="../img/footer.png" alt=""></div>
+    </div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/index.js"></script>
+
+</html>

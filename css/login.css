@@ -1,0 +1,43 @@
+* {margin: 0;padding: 0;transition: .2s;user-select: none;}
+a,li {text-decoration: none;list-style: none;color: black;}
+.to-top{width: 50px; height: 50px; text-align: center; padding: 10px; background: #ffffff; position: fixed; bottom: 100px; right: -100px; box-shadow: 0px 0px 20px #d3d3d3; border-radius: 10px;}
+nav {width: 100%;position: fixed;height: 65px;display: flex;justify-content: center;margin: 0 auto;z-index: 999;}
+nav * {color: white;}
+.nav {width: 1440px;display: flex;justify-content: space-between;line-height: 65px;}
+.logo{display: flex;align-items: center;}
+.logo img{width: 34px;height: 34px;transform: scaleX(-1);}
+.nav-content ul {display: flex;justify-content: center;}
+.nav-content li {width: 100px;}
+.nav a:hover {color: #ff6700;}
+.banner-box {margin: 0 auto;min-width: 1240px;width: 1897px;overflow: hidden;}
+.bottom{background: white;}
+.bottom-box{width: 1240px; margin: 0 auto; display: flex; justify-content: space-between;}
+.bottom-box *{margin: 10px 0px; font-size: 12px; color: #757575;}
+.bottom-box dt{font-size: 14px; margin: 30px 0; color: #000;}
+.bottom-box .call{margin: 30px 0; text-align: center; height: 130px; border-left: 1px solid #d3d3d3; padding-left: 150px;}
+.bottom-box .call p:nth-child(1){font-size: 22px; color: #FF6700;}
+.bottom-box .call div{width: 120px; line-height: 30px; border: 1px solid #ff6700; color: #FF6700;}
+.bottom-box .call div:hover{background: #ff6700; color: white;}
+.bottom-img{text-align: center; margin: 25px auto;}
+.bottom-box dd a:hover{color: #FF6700;}
+
+.login {background: url(../img/login.jpg)no-repeat center;background-size: cover;}
+.login-content {max-width: 100%;height: 100vh;display: flex;align-items: center;}
+.login-content .login-content-item {position: absolute;right: 10%;height: 300px;padding: 50px;background: #f5f5f5e0;border-radius: 10px;}
+.title {font-size: 30px;}
+.login-img {width: 50%;height: 100vh;}
+.login-img img {width: 100%;}
+.user-input {width: 400px;height: 50px;margin: 15px 0;padding: 0 20px;border: 0;border-bottom: 1px solid #FF6900;}
+.user-input:focus {outline: none;}
+.user-more {display: flex;justify-content: space-between;}
+.checkbox-text {font-size: 12px;color: #9a9a9a;}
+.forget {color: #FF6900;}
+.checkbox[type="checkbox"] {color: #FF6900;background: #FF6900;}
+.button-box {display: flex;justify-content: space-between;}
+.button {width: 200px;height: 40px;border: none;}
+input[type="submit"] {background: #FF6900;color: #FFFFFF;}
+button[type="button"] {background: #FFFFFF;border: 1px solid #FF6900;}
+button[type="button"]:hover {background: #FF6900;color: #FFFFFF;}
+.ml-10 {margin-left: 20px;}
+.signin-box {display: none;}
+@media screen and (max-width: 680px) {.login-content .login-content-item {left: 10%;height: auto;}.user-input {width: 90%;}}
